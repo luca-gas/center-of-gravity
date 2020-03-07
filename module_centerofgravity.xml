@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_centerofgravity" default="compile.module.centerofgravity">
+  <dirname property="module.centerofgravity.basedir" file="${ant.file.module_centerofgravity}"/>
+  
+  <property name="module.jdk.home.centerofgravity" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.centerofgravity" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.centerofgravity" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.centerofgravity" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="centerofgravity.output.dir" value="${module.centerofgravity.basedir}/out/production/centerOfGravity"/>
+  <property name="centerofgravity.testoutput.dir" value="${module.centerofgravity.basedir}/out/test/centerOfGravity"/>
+  
+  <path id="centerofgravity.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="centerofgravity.module.production.classpath">
+    <path refid="${module.jdk.classpath.centerofgravity}"/>
+  </path>
+  
+  <path id="centerofgravity.runtime.production.module.classpath">
+    <pathelement location="${centerofgravity.output.dir}"/>
+  </path>
+  
+  <path id="centerofgravity.module.classpath">
+    <path refid="${module.jdk.classpath.centerofgravity}"/>
+    <pathelement location="${centerofgravity.output.dir}"/>
+  </path>
+  
+  <path id="centerofgravity.runtime.module.classpath">
+    <pathelement location="${centerofgravity.testoutput.dir}"/>
+    <pathelement location="${centerofgravity.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.centerofgravity">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.centerofgravity">
+    <patternset refid="excluded.from.module.centerofgravity"/>
+  </patternset>
+  
+  <path id="centerofgravity.module.sourcepath">
+    <dirset dir="${module.centerofgravity.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.centerofgravity" depends="compile.module.centerofgravity.production,compile.module.centerofgravity.tests" description="Compile module centerOfGravity"/>
+  
+  <target name="compile.module.centerofgravity.production" depends="register.custom.compilers" description="Compile module centerOfGravity; production classes">
+    <mkdir dir="${centerofgravity.output.dir}"/>
+    <javac2 destdir="${centerofgravity.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.centerofgravity}/javac">
+      <compilerarg line="${compiler.args.centerofgravity}"/>
+      <bootclasspath refid="centerofgravity.module.bootclasspath"/>
+      <classpath refid="centerofgravity.module.production.classpath"/>
+      <src refid="centerofgravity.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.centerofgravity"/>
+    </javac2>
+    
+    <copy todir="${centerofgravity.output.dir}">
+      <fileset dir="${module.centerofgravity.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.centerofgravity.tests" depends="register.custom.compilers,compile.module.centerofgravity.production" description="compile module centerOfGravity; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.centerofgravity" description="cleanup module">
+    <delete dir="${centerofgravity.output.dir}"/>
+    <delete dir="${centerofgravity.testoutput.dir}"/>
+  </target>
+</project>

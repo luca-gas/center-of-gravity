@@ -1,0 +1,25 @@
+# SEE https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javapackager.html
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home
+APP_DIR_NAME=CenterOfGravity.app
+
+jpackage --input ./ \
+  --name CenterOfGravity \
+  --main-jar out/artifacts/centerOfGravity_jar/centerOfGravity.jar \
+  --main-class Main \
+  --type dmg \
+  --app-version "1" \
+  --verbose \
+  --java-options '--enable-preview'
+
+#javapackager \
+#  -deploy -Bruntime=${JAVA_HOME} \
+#  -native image \
+#  -srcdir out/artifacts/centerOfGravity_jar \
+#  -outdir release \
+#  -outfile ${APP_DIR_NAME} \
+#  -appclass Main \
+#  -name "CenterOfGravity" \
+#  -title "CenterOfGravity" \
+#  -nosign \
+#  -v

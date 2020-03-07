@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="centerOfGravity:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="Update jar package and packaging instructions" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sp</find>
+      <find>get()</find>
+      <find>period</find>
+      <find>Math.pi</find>
+      <find>Error whi</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lucagas &lt;urban7bk@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Added tests for Line and Point classes." />
+        <option name="rewordedMessage" value="V1" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="2d6f00ff754aabf924057d54a336e91ac2c5a712" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/release/CenterOfGravity.app.jnlp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/InputOutput.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/datamodel/DataSeries.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/datamodel/PointTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1439" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectId" id="1aTs2OxcOLVeMpAvY0MeFDbQPuM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/luca/Dropbox/Documents/Programming/IdeaProjects/centerOfGravity&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deps" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="centerOfGravity" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CenterOfGravityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="centerOfGravity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CenterOfGravityTest.onlyOnePoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="centerOfGravity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
+      <option name="METHOD_NAME" value="onlyOnePoint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CenterOfGravityTest.symmetric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="centerOfGravity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
+      <option name="METHOD_NAME" value="symmetric" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CenterOfGravityTest.twoPointSecondSignalStronger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="centerOfGravity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
+      <option name="METHOD_NAME" value="twoPointSecondSignalStronger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.CenterOfGravityTest" />
+      <item itemvalue="JUnit.CenterOfGravityTest.onlyOnePoint" />
+      <item itemvalue="JUnit.CenterOfGravityTest.symmetric" />
+      <item itemvalue="JUnit.CenterOfGravityTest.twoPointSecondSignalStronger" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CenterOfGravityTest.twoPointSecondSignalStronger" />
+        <item itemvalue="JUnit.CenterOfGravityTest" />
+        <item itemvalue="JUnit.CenterOfGravityTest.onlyOnePoint" />
+        <item itemvalue="JUnit.CenterOfGravityTest.symmetric" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="" />
+      <created>1582144143940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582144143940</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added tests for Line and Point classes.">
+      <created>1583598944861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583598944862</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added tests for DataSeries class.">
+      <created>1583599782107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583599782107</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Make period a parameter.&#10;&#10;Also use period when normalizing the angle to time. This is better since &#10;the max value is now 23 instead of 24.&#10;&#10;Also fixed some issues found by code analysis.">
+      <created>1583601824958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583601824959</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add text field for specifying the period. &#10;&#10;Also looking at period instead of maxX for calculating the angle of each&#10;data point.">
+      <created>1583664120162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583664120162</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Make the result always normalize to 24. &#10;&#10;Also some renaming to make the whole thing clearer.">
+      <created>1583675166794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583675166794</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Make the folder a parameter. In this way we can specify different folders (via command line args) when running form the IDE .&#10;&#10;Other minor changes:&#10;- Also improve line counting for error output. This should make it more obvious what is wrong with the input file.&#10;- concat error message of inner exception. Should probably find a more generic way to do this all over the place.">
+      <created>1585169326094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585169326095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add gitignore">
+      <created>1673794775765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673794775765</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add gitignore">
+      <created>1673794841643</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673794841643</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix some mistakes in readme and a problem with paths when running from Jars">
+      <created>1673806065825</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673806065825</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 21m 15s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 23m 24s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 31m 12s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 32m 35s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 32m 50s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 44m 56s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.07 at 17h 45m 41s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_centerOfGravity - 2020.03.08 at 11h 08m 55s.xml">
+      <configuration name="All in centerOfGravity" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Added tests for Line and Point classes." />
+    <MESSAGE value="Added tests for DataSeries class." />
+    <MESSAGE value="Make period a parameter.&#10;&#10;Also use period when normalizing the angle to time. This is better since &#10;the max value is now 23 instead of 24." />
+    <MESSAGE value="Make period a parameter.&#10;&#10;Also use period when normalizing the angle to time. This is better since &#10;the max value is now 23 instead of 24.&#10;&#10;Also fixed some issues found by code analysis." />
+    <MESSAGE value="Add text field for specifying the period. &#10;&#10;Also looking at period instead of maxX for calculating the angle of each&#10;data point." />
+    <MESSAGE value="Make the result always normalize to 24. &#10;&#10;Also some renaming to make the whole thing clearer." />
+    <MESSAGE value="Make the folder a parameter. In this way we can specify different folders (via command line args) when running form the IDE .&#10;&#10;Other minor changes:&#10;- Also improve line counting for error output. This should make it more obvious what is wrong with the input file.&#10;- concat error message of inner exception. Should probably find a more generic way to do this all over the place." />
+    <MESSAGE value="Add gitignore" />
+    <MESSAGE value="Add junit dep" />
+    <MESSAGE value="Fix some mistakes in readme and a problem with paths when running from Jars" />
+    <MESSAGE value="Update jar package and packaging instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update jar package and packaging instructions" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="folder" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>folder</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>centerOfGravity:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 (tensor-flow) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>centerOfGravity</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>junit-4.13</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

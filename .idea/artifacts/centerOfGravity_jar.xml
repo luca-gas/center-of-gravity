@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="centerOfGravity:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/centerOfGravity_jar</output-path>
+    <root id="archive" name="centerOfGravity.jar">
+      <element id="module-output" name="centerOfGravity" />
+    </root>
+  </artifact>
+</component>
