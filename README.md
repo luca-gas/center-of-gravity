@@ -5,7 +5,7 @@ The Center of Gravity was calculated as described
 in [Díez-Noguera, 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723718/).
 
 The Java package for the application can be downloaded
-under [release/centerOfGravity.jar](https://github.com/luca-gas/center-of-gravity/blob/master/out/artifacts/centerOfGravity_jar/centerOfGravity.jar)
+as [centerOfGravity.jar](https://github.com/luca-gas/center-of-gravity/blob/master/out/artifacts/centerOfGravity_jar/centerOfGravity.jar)
 .
 
 The time-series should be saved in a .txt file where:
