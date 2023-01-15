@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="Update jar package and packaging instructions" />
+    <list default="true" id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="Update jar package and packaging instructions">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +50,6 @@
     <option name="onto" value="2d6f00ff754aabf924057d54a336e91ac2c5a712" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/release/CenterOfGravity.app.jnlp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/InputOutput.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/datamodel/DataSeries.java" root0="FORCE_HIGHLIGHTING" />

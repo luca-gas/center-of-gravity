@@ -1,10 +1,11 @@
 # center-of-gravity
 
 COG is a phase marker that meaningfully represents the central tendency of circadian activity in a time-series.
-The Center of Gravity was calculated as described in [Díez-Noguera, 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723718/).
+The Center of Gravity was calculated as described
+in [Díez-Noguera, 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723718/).
 
 The Java package for the application can be downloaded
-under [release/centerOfGravity.jar](https://github.com/luca-gas/center-of-gravity/blob/master/release/centerOfGravity.jar)
+under [release/centerOfGravity.jar](https://github.com/luca-gas/center-of-gravity/blob/master/out/artifacts/centerOfGravity_jar/centerOfGravity.jar)
 .
 
 The time-series should be saved in a .txt file where:
