@@ -30,30 +30,24 @@ public final class CenterOfGravity {
       while (angle < 0) {
         angle += CIRCLE;
       }
-      while (angle >= CIRCLE) {
-        angle -= CIRCLE;
-      }
-      return angle;
+      return angle % CIRCLE;
     }
 
     private double centerOfGravity() {
-      double angleInRadians = normalizeAngle(atan2(averageCoordinateY(),
-        averageCoordinateX()));
+      double angleInRadians =
+        normalizeAngle(
+          atan2(sumCoordinateY(), sumCoordinateX()));
       return angleInRadians / CIRCLE * period;
     }
 
-    private double averageCoordinateX() {
-      double numerator =
+    private double sumCoordinateX() {
+      return
         dataSeries.stream().map(this::weightedCoordinateX).reduce(Double::sum).orElse(0.0);
-
-      return numerator / sumSignal();
     }
 
-    private double averageCoordinateY() {
-      double numerator =
+    private double sumCoordinateY() {
+      return
         dataSeries.stream().map(this::weightedCoordinateY).reduce(Double::sum).orElse(0.0);
-
-      return numerator / sumSignal();
     }
 
     private double weightedCoordinateX(Point point) {
@@ -66,10 +60,6 @@ public final class CenterOfGravity {
 
     private double angle(Point point) {
       return CIRCLE * point.getTime() / period;
-    }
-
-    private double sumSignal() {
-      return dataSeries.stream().map(Point::getSignal).reduce(Double::sum).orElse(0.0);
     }
   }
 }

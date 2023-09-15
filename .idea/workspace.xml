@@ -6,7 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="Update jar package and packaging instructions">
+    <list default="true" id="70d17821-ca60-4cf2-99ab-571b50ef36d5" name="Default Changelist" comment="Don't divide by sum of signals&#10;&#10;This causes problems when the sum is negative, shifting results by half a period&#10;&#10;Also added a JFileChooser to choose the input file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="centerOfGravity" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CenterOfGravityTest.onlyOnePoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CenterOfGravityTest.sinusoid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="centerOfGravity" />
       <extension name="coverage">
         <pattern>
@@ -127,13 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="algorithms" />
       <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
-      <option name="METHOD_NAME" value="onlyOnePoint" />
+      <option name="METHOD_NAME" value="sinusoid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CenterOfGravityTest.symmetric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CenterOfGravityTest.twoSymmetricPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="centerOfGravity" />
       <extension name="coverage">
         <pattern>
@@ -143,13 +143,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="algorithms" />
       <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
-      <option name="METHOD_NAME" value="symmetric" />
+      <option name="METHOD_NAME" value="twoSymmetricPoints" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CenterOfGravityTest.twoPointSecondSignalStronger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CenterOfGravityTest.twoSymmetricPointsOneNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="centerOfGravity" />
       <extension name="coverage">
         <pattern>
@@ -159,7 +159,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="algorithms" />
       <option name="MAIN_CLASS_NAME" value="algorithms.CenterOfGravityTest" />
-      <option name="METHOD_NAME" value="twoPointSecondSignalStronger" />
+      <option name="METHOD_NAME" value="twoSymmetricPointsOneNegative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,18 +167,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.CenterOfGravityTest.sinusoid" />
+      <item itemvalue="JUnit.CenterOfGravityTest.twoSymmetricPoints" />
+      <item itemvalue="JUnit.CenterOfGravityTest.twoSymmetricPointsOneNegative" />
       <item itemvalue="JUnit.CenterOfGravityTest" />
-      <item itemvalue="JUnit.CenterOfGravityTest.onlyOnePoint" />
-      <item itemvalue="JUnit.CenterOfGravityTest.symmetric" />
-      <item itemvalue="JUnit.CenterOfGravityTest.twoPointSecondSignalStronger" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CenterOfGravityTest.twoPointSecondSignalStronger" />
+        <item itemvalue="JUnit.CenterOfGravityTest.sinusoid" />
         <item itemvalue="JUnit.CenterOfGravityTest" />
-        <item itemvalue="JUnit.CenterOfGravityTest.onlyOnePoint" />
-        <item itemvalue="JUnit.CenterOfGravityTest.symmetric" />
+        <item itemvalue="JUnit.CenterOfGravityTest.twoSymmetricPoints" />
+        <item itemvalue="JUnit.CenterOfGravityTest.twoSymmetricPointsOneNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673806065825</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update jar package and packaging instructions">
+      <created>1673809787238</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673809787239</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix again readme link">
+      <created>1673809871351</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673809871352</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed bug in computation of center of gravity.&#10;&#10;Also added a JFileChooser to choose the input file.">
+      <created>1694820114645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694820114645</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -325,8 +346,10 @@
     <MESSAGE value="Add gitignore" />
     <MESSAGE value="Add junit dep" />
     <MESSAGE value="Fix some mistakes in readme and a problem with paths when running from Jars" />
-    <MESSAGE value="Update jar package and packaging instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update jar package and packaging instructions" />
+    <MESSAGE value="Fix readme link" />
+    <MESSAGE value="Fix again readme link" />
+    <MESSAGE value="Don't divide by sum of signals&#10;&#10;This causes problems when the sum is negative, shifting results by half a period&#10;&#10;Also added a JFileChooser to choose the input file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Don't divide by sum of signals&#10;&#10;This causes problems when the sum is negative, shifting results by half a period&#10;&#10;Also added a JFileChooser to choose the input file." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

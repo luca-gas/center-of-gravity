@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
@@ -14,21 +13,18 @@ import java.util.stream.Collectors;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Main {
-  private static final String DEFAULT_FOLDER = "../..";
-  private static final String INPUT_FILE_NAME = "input.txt";
   private static final String OUTPUT_FILE_NAME = "output.txt";
   private static final double OUTPUT_NORMALIZATION = 24; // Hours per day.
   private static final String DELIMITER = "\t";
 
   public static void main(String[] args) {
-    String folder = args.length > 0 ? args[0] : DEFAULT_FOLDER;
-    createGUI(folder);
+    createGUI();
   }
 
-  private static void createGUI(String folder) {
+  private static void createGUI() {
     JFrame frame = new JFrame("Center of Gravity");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(200, 100);
+    frame.setSize(200, 160);
 
     JLabel periodLabel = new JLabel();
     periodLabel.setText("Period");
@@ -40,22 +36,36 @@ public class Main {
     periodTextField.setBounds(100, 10, 95, 30);
     frame.add(periodTextField);
 
-    JButton button = new JButton("Run");
-    button.setBounds(0, 50, 200, 30);
-    frame.add(button);
+    JFileChooser jFileChooser = new JFileChooser();
+    frame.add(jFileChooser);
+    JButton openFileButton = new JButton();
+    openFileButton.setText("Select File");
+    openFileButton.setBounds(0, 50, 200, 30);
+    frame.add(openFileButton);
+    JTextField inputFile = new JTextField();
+
+    JButton runButton = new JButton("Run");
+    runButton.setVisible(false);
+    runButton.setBounds(0, 90, 200, 30);
+    frame.add(runButton);
     frame.setLayout(null);
 
-    button.addActionListener(unusedAction -> {
-      // Depending on whether we are running from the jar or from an app
-      // bundle, the definition of "current folder" changes.
-      boolean isInMacAppBundle = Files.exists(Path.of(folder, INPUT_FILE_NAME));
-      Path inputFile = isInMacAppBundle ? Path.of(folder, INPUT_FILE_NAME) :
-        Path.of(INPUT_FILE_NAME);
-      Path outputFile = isInMacAppBundle ? Path.of(folder, OUTPUT_FILE_NAME)
-        : Path.of(OUTPUT_FILE_NAME);
+    openFileButton.addActionListener(unusedAction -> {
+      if (jFileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+        inputFile.setText(jFileChooser.getSelectedFile().getAbsolutePath());
+        runButton.setVisible(true);
+      }
+    });
 
+    runButton.addActionListener(unusedAction -> {
       try {
-        compute(inputFile, outputFile,
+        if (inputFile.getText().isEmpty()) {
+          throw new RuntimeException("You must select a file first");
+        }
+        Path inputFilePath = Path.of(inputFile.getText());
+        Path outputFile = Path.of(inputFilePath.getParent().toString(),
+          OUTPUT_FILE_NAME);
+        compute(inputFilePath, outputFile,
           Integer.parseInt(periodTextField.getText()));
         showMessageDialog(null, "Done.");
       } catch (Exception ex) {
